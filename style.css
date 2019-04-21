@@ -1,39 +1,74 @@
+/* Look into CSS variables; now built in CSS */
+
 body {
-    background-color: #ffe8ed;
-    color: #0055a5;
+    background-color: #FFFAE3;
+    color: #5D576B;
+
+    font-family: 'Comfortaa', sans-serif;
 }
 
 p {
-    margin-bottom: 8%;
+    margin-bottom: 3%;
 }
 
-h1, h2, h3, h4, h5, .to-top {
+h1,
+h2,
+h3,
+h4,
+h5,
+.to-top {
     font-family: Courier New, serif;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.text-small {
+    display: block;
+    font-size: 0.6em;
+}
+
+hr {
+    border-style: dashed;
+    border-width: 0.5px;
+}
+
+section {
+    margin-bottom: 5%;
+}
+
+a {
+    color: #F7567C;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #99E1D9;
+    text-decoration: none;
 }
 
 /*-------------*/
 
-.top-nav {  
+.top-nav {
     width: 100%;
     height: 100px;
 }
 
 .main-head-text {
-    float: left;
+    /*    float: left;*/
 }
 
 .top-nav ul {
-    text-align: right;
-    
+    /*    text-align: right;*/
+
     font-size: 1.2em;
     font-family: Courier New, serif;
 }
 
 
 
-.top-hav-menu {
-    
-}
+.top-hav-menu {}
 
 .top-nav-menu li {
     display: inline-block;
@@ -44,12 +79,15 @@ h1, h2, h3, h4, h5, .to-top {
     margin: 4% 12%;
 }
 
-h2, h5, .to-top {
+h2,
+h4,
+.to-top {
     font-weight: bold;
 }
 
-.main-head-text, h3 {
-    text-shadow: .08em .08em rgba(129 , 156, 181, 0.3)
+.main-head-text,
+h3 {
+    text-shadow: .08em .08em rgba(129, 156, 181, 0.3);
 }
 
 .main-body {
@@ -72,11 +110,224 @@ h2, h5, .to-top {
 
 .xp-date {
     font-style: italic;
+    font-weight: bold;
     font-size: 0.8em;
-    
     margin-bottom: 2% !important;
 }
 
 .gallery-item {
     padding: 4%;
+}
+
+.current-job::before {
+    content: '★ ';
+    color: #F76F8E;
+}
+
+.job-entry {
+    margin-bottom: 25px;
+}
+
+.job-title {
+    font-size: 0.6em;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    padding: 6px 12px;
+    text-transform: uppercase;
+    color: #FFFAE3;
+    background-color: #F76F8E;
+    display: inline-block;
+    box-shadow: 0.2em 0.2em rgba(129, 156, 181, 0.3);
+    border-radius: 4px;
+}
+
+.long-title {
+    font-size: 1em;
+}
+
+.list-set {
+    margin-bottom: 6%;
+}
+
+
+/*---------------*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 12px;
+
+    margin-bottom: 50px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 12px;
+
+    margin-bottom: 50px;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 12px;
+
+    margin-bottom: 50px;
+}
+
+.icon-grid>.grid-item img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.img-single {
+    display: block;
+    margin: 0 auto 2% auto;
+    max-width: 80%;
+}
+
+.skill-list {
+    column-count: 3;
+    column-width: 200px;
+}
+
+.grid-item {
+    position: relative;
+    width: 100%;
+}
+
+.grid-item img {
+    height: 325px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-item p {
+    margin-bottom: 0;
+}
+
+.grid-overlay {
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: #5D576B;
+    opacity: 0;
+}
+
+.grid-overlay:hover {
+    opacity: 0.95;
+    transition: 0.3s ease;
+}
+
+.grid-text {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* flex to center*/
+    text-align: center;
+    color: #FFF;
+    font-size: 1.2em;
+}
+
+/* Cree Page */
+.category-list {
+    display: inline;
+    list-style-image: none;
+}
+
+.category-list a {
+    text-decoration: none;
+}
+
+.category-list li {
+    font-size: 0.6em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 8px;
+    text-transform: uppercase;
+    color: #FFFAE3;
+    background-color: #5D576B;
+    display: inline-block;
+    box-shadow: 0.2em 0.2em rgba(129, 156, 181, 0.3);
+    border-radius: 4px;
+    margin: 1% auto;
+}
+
+.category-list li:hover {
+    background-color: #F7567C;
+    color: #FFFAE3;
+    transition-duration: 0.2s;
+}
+
+s .category-list li > a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+
+/* Web Banner Grid */
+.cree-banner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-gap: 4px;
+    margin-bottom: 5%;
+}
+
+.cree-banner-item {
+    position: relative;
+    width: 100%;
+}
+
+.cree-banner-item img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* Product Page Grid */
+.prod-page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 4px;
+    margin-bottom: 5%;
+}
+
+.prod-page-item {
+    position: relative;
+    width: 100%;
+}
+
+
+.prod-page-item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* Info Page Grid */
+
+.info-page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 4px;
+    margin-bottom: 5%;
+}
+
+.info-page-item {
+    position: relative;
+    width: 100%;
+}
+
+.info-page-item img {
+    width: 100%;
+    object-fit: cover;
 }
