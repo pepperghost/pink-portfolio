@@ -13,55 +13,43 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- Import Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,900" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
     <!-- Custom Style -->
     <link rel="stylesheet" href="style.css" />
 
-    <title>jenny liao: web design + front-end web development</title>
+    <title>Jenny Liao: graphic, web, ux/ui design + front-end web development</title>
 </head>
 
 <body>
-    <div class="main-nav">
-        <!-- Nav Menu -->
-        <header class="top-nav">
-            <h2 class="main-head-text"><a href="index.html">jenny liao</a></h2>
-            <ul class="top-nav-menu">
-                <li><a href="#wk">works</a></li>
-                <li><a href="#xp">experiences</a></li>
-                <li><a href="#ct">contact</a></li>
-            </ul>
-        </header>
-    </div>
+    <!-- Nav Menu -->
+    <header>
+        <nav class="row main-menu">
+            <div class="col-6 col-md-3 menu-item"><a href="index.html">home</a></div>
+            <div class="col-6 col-md-3 menu-item"><a href="#works">works</a></div>
+            <div class="col-6 col-md-3 menu-item"><a href="#skills">skills</a></div>
+            <div class="col-6 col-md-3 menu-item"><a href="liao_resume.pdf" target="_new">resume</a></div>
+        </nav>
+    </header>
     <div class="main-body">
-        <section id="introduction">
-            my name is jenny liao and i enjoy using my art, design and programming skills to help others attain their vision by bringing their ideas to life
-        </section>
-        <section>
-            <h3><a name="wk"><i class="fas fa-briefcase"></i> works</a></h3>
-
+        <section id="featured-works">
+            <a name="works"></a>
             <!-- Grid Gallery -->
             <div class="grid">
                 <div class="grid-item">
-                    <a href="works/cree.html"><img class="grid-img" alt="Cree Inc. Works" src="img/cree_blue_thumb.png" />
+                    <a href="works/cree.html"><img class="grid-img" alt="Cree, Inc. Works" src="img/cree_blue_thumb.png" />
                         <div class="grid-overlay">
-                            <span class="grid-text"><i class="fas fa-search"></i> View Works<br /><span class="text-small">Web Banners, Product Pages, Press Releases, Web Graphics</span></span>
+                            <span class="grid-text"><i class="fas fa-search"></i> Cree, Inc<br /><span class="text-small">Web Banners, Product Pages, Press Releases, Web Graphics</span></span>
                         </div>
                     </a>
                 </div>
-                <!-- <div class="grid-item">
-                    <a href="works/wolfspeed.html"><img alt="Wolfspeed, A Cree Company Works" src="img/ws_thumb.png" />
-                        <div class="grid-overlay">
-                            <span class="grid-text"><i class="fas fa-search"></i> View Works<br /><span class="text-small">Web Ad banners, event pages, press release, document library</span></span>
-                        </div>
-                    </a>
-                </div> -->
                 <div class="grid-item">
                     <p class="grid-overlay">e-conolight</p>
                     <a href="works/econolight.html"><img src="img/econo_thumb.png" alt="e-conolight" />
                         <div class="grid-overlay">
-                            <span class="grid-text"><i class="fas fa-search"></i> View Works<br /><span class="text-small">Infographics, visual guides</span></span>
+                            <span class="grid-text"><i class="fas fa-search"></i> e-conolight<br /><span class="text-small">Infographics, visual guides</span></span>
                         </div>
                     </a>
                 </div>
@@ -69,7 +57,7 @@
                     <p class="grid-overlay">Oak Ridge Associated Universities / U.S EPA</p>
                     <a href="works/epa.html"><img src="img/EPA_thumb.png" alt="US EPA" />
                         <div class="grid-overlay">
-                            <span class="grid-text"><i class="fas fa-search"></i> View Works<br /><span class="text-small">Wireframes, documentations</span></span>
+                            <span class="grid-text"><i class="fas fa-search"></i> ORAU / US EPA<br /><span class="text-small">Wireframes, documentations</span></span>
                         </div>
                     </a>
                 </div>
@@ -77,7 +65,7 @@
                     <p class="grid-overlay">Intellikey</p>
                     <a href="works/intellikey.html"><img src="img/intellikey_thumb.jpg" />
                         <div class="grid-overlay">
-                            <span class="grid-text"><i class="fas fa-search"></i> View Works<br /><span class="text-small">Graphic design and illustrations</span></span>
+                            <span class="grid-text"><i class="fas fa-search"></i> Intellikey<br /><span class="text-small">Graphic design and illustrations</span></span>
                         </div>
                     </a>
                 </div>
@@ -85,95 +73,74 @@
                     <p class="grid-overlay">Freelance</p>
                     <a href="works/other.html"><img src="img/misc_thumb.png" />
                         <div class="grid-overlay">
-                            <span class="grid-text"><i class="fas fa-search"></i> View Works<br /><span class="text-small">Graphic designs, flyers, package design, logo design</span></span>
+                            <span class="grid-text"><i class="fas fa-search"></i> Freelance &amp; Personal Works<br /><span class="text-small">Graphic designs, flyers, package design, logo design</span></span>
                         </div>
                     </a>
                 </div>
             </div>
         </section>
-
         <section id="qualifications">
-            <div class="list-set">
-                <h3><i class="fas fa-book"></i> <a name="sk">skills</a></h3>
+            <div class="list-wrap">
+                <h3><a name="skills">skills</a></h3>
                 <ul class="skill-list">
                     <li>Web design</li>
                     <li>Graphic design</li>
                     <li>Art and illustration</li>
                     <li>Front-end development</li>
-                    <li>Wireframing</li>
                     <li>UX/UI design</li>
-                    <li>Content management</li>
-                    <li>Project management</li>
-                    <li>QA (manual and automated)</li>
+                    <li>Content Management</li>
                 </ul>
             </div>
-            <div class="list-set">
-                <h3><i class="fas fa-tools"></i> <a name="tc">tools &amp; technologies</a></h3>
+            <div class="list-wrap">
+                <h3><a name="tc">tool box</a></h3>
                 <ul class="skill-list">
+                    <li>HTML + CSS</li>
+                    <li>JavaScript</li>
+                    <li>JQuery</li>
+                    <li>SASS</li>
+                    <li>AngularJS</li>
+                    <li>Bootstrap</li>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                    <li>Wordpress</li>
+                    <li>Magento</li>
                     <li>Photoshop</li>
                     <li>Illustrator</li>
                     <li>InDesign</li>
                     <li>Media Encoder</li>
-                    <li>Brackets</li>
-                    <li>Visual Studio Basic</li>
-                    <li>Github</li>
-                    <li>Usersnap</li>
-                    <li>JIRA</li>
-                    <li>Confluence</li>
-                    <li>Microsoft Sharepoint</li>
-                    <li>Breeze Task Management</li>
-                    <li>Trello</li>
-                    <li>Formsite</li>
-                </ul>
-            </div>
-
-            <div class="list-set">
-                <h3><i class="fas fa-code"></i> <a name="lg">dev </a></h3>
-                <ul class="skill-list">
-                    <li>HTML, CSS, Javascript</li>
-                    <li>Sass</li>
-                    <li>Wordpress CMS</li>
-                    <li>Magento</li>
-                    <li>AngularJS</li>
-                    <li>Ruby on Rails</li>
-                    <li>Python</li>
-                    <li>PHP</li>
-                    <li>Visual Basic for Excel</li>
+                    <li>Dreamweaver</li>
+                    <li>Balsamiq</li>
                 </ul>
             </div>
         </section>
-
-        <section>
-            <h3><a name="xp"><i class="fas fa-desktop"></i> experiences</a></h3>
+        <section id="experiences">
+            <h3>experiences</h3>
             <p class="xp-desc">current and past professional experiencess</p>
             <div class="row">
-                <div class="col-xs-12 col-md-6 job-entry">
+                <div class="col-xs-12 job-entry">
                     <h4 class="current-job">Cree Inc.</h4>
                     <p class="job-title">web designer</p>
                     <p class="xp-date">march 2017 - <span id="current-date">current</span> <span id="job-duration"></span></p>
                     <ul>
-                        <li>Manage and update web contents across all Cree and Wolfspeed corporate Magento and WordPress websites</li>
-                        <li>Stage and implement product launches, campaigns and press releases on strict corporate schedule</li>
+                        <li>Manage and update corporoate web contents across all Cree and Wolfspeed websites</li>
+                        <li>Stage and implement product launches, marketing campaigns and press releases on strict corporate schedule</li>
                         <li>Design and implement new content pages with HTML, CSS and Javascript</li>
-                        <li>Design graphics for web and print collaterals in Adobe Photoshop, Illustrator and InDesign, adhereing to corporate style guide</li>
+                        <li>Create graphics for web and print collaterals while adhereing to corporate style guidelines</li>
                         <li>Conduct systematic website QA and testing (automated and manual)</li>
-                        <li>Organized day to day tasks and their respective communication and documentation via Breeze</li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-md-6 job-entry">
-                    <h4 class="long-title">Oak Ridge Associated Universities / U.S Environmental Protection Agency</h4>
-                    <p class="job-title">web designer</p>
+                <div class="col-xs-12 job-entry">
+                    <h4>Oak Ridge Associated Universities / U.S Environmental Protection Agency</h4>
+                    <p class="job-title">ux/ui designer</p>
                     <p class="xp-date">jun 2016 - oct 2016 (4 months)</p>
                     <ul>
                         <li>General QA and evaluation of existing web application UI</li>
-                        <li>Create low and high fidelity mock-ups for UI re-design</li>
-                        <li>Provide consultation and directions for developers in UI design and development</li>
+                        <li>Create low and high fidelity mock-ups for feature UI re-design</li>
+                        <li>Provided UX/UI consultations for developers working on new and existing features of the Chemistry Dashboard.</li>
                         <li>Reported bugs and design concerns via JIRA</li>
-                        <li>Created design documentations on Confluence</li>
+                        <li>Created and discussed design documentations via Confluence</li>
                     </ul>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-xs-12 col-md-6 job-entry">
                     <h4>Theatre Reviews Ltd.</h4>
                     <p class="job-title">web design/development intern</p>
@@ -185,15 +152,9 @@
                         <li>Created user-friendly documentation of new WordPress website</li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-md-6 job-entry"></div>
             </div>
         </section>
-        <section>
-            <h3><a name="ct"><i class="far fa-envelope"></i> contact</a></h3>
-            <p>If you would like to reach out to me for any projects, you can contact me at jjliao92 @ gmail.com (remove spaces)</p>
-        </section>
     </div>
-
     <footer>
         <div class="to-top">
             <p class="text-center">
